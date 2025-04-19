@@ -7,12 +7,9 @@ import { useRef } from "react";
 import 'highlight.js/styles/github-dark.css';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from '@/components/ui/select';
 import WithLineNumbers from '@/components/code-block';
-import { Input } from '@/components/ui/input';
 import { Language } from 'prism-react-renderer';
 import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import EditableCodeBlock from '@/components/code-block-2';
 import { Button } from '@/components/ui/button';
 import { ThemeValue, themes, defaultCode, ThemeKey, paddingOptions, languageOptions } from '@/components/theme-options';
 
@@ -37,8 +34,7 @@ export default function Home() {
     }
   };
 
-  const [shadow, setShadow] = useState("shadow-[0px_9px_29px_0px_#2d3748]")
-
+  const shadow = "shadow-[0px_9px_29px_0px_#2d3748]"
   const [showLines, setShowLines] = useState(false);
 
   const [language, setLanguage] = useState<Language>("typescript");
