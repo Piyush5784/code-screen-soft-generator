@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <div>
           <div className="p-10 flex items-center justify-center flex-col">
-            <h1 className="text-center font-bold text-4xl">Generate ScreenSofts</h1>
+            <h1 className="text-center font-bold text-4xl">Generate ScreenSoft's</h1>
             <div style={{ padding: `${padding}` }} className={` ${theme} mt-5 max-w-3xl border duration-300 rounded-md`} ref={codeRef}>
               <WithLineNumbers code={code} language={language} shadow={shadow} codingLines={showLines} />
             </div>
